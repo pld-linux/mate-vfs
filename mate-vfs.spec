@@ -145,7 +145,7 @@ Dokumentacja API mate-vfs.
 	%{!?with_hal:--disable-hal} \
 	--disable-howl \
 	--disable-schemas-install \
-	%{!?with_static_libs:--disable-static} \
+	--disable-static \
 	--enable-gtk-doc \
 	--enable-ipv6 \
 	--with-html-dir=%{_gtkdocdir}
