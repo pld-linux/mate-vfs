@@ -1,0 +1,18 @@
+--- mate-vfs-1.4.0/test/Makefile.am.orig	2014-01-11 10:36:15.573754627 +0100
++++ mate-vfs-1.4.0/test/Makefile.am	2014-01-11 10:39:47.053745750 +0100
+@@ -58,13 +58,13 @@
+ TESTS_ENVIRONMENT = MATE_VFS_MODULE_PATH=$(top_builddir)/modules/.libs \
+ 		MATE_VFS_MODULE_CONFIG_PATH=$(top_srcdir)/modules \
+ 		MATE_VFS_TEST_CONFIG_FILE=$(top_srcdir)/test/queue-test-config.xml \
+-		SRCDIR=$(srcdir)
++		SRCDIR=$(top_srcdir)/test
+ TESTS = test-acl	  \
+ 	test-address      \
+ 	test-async-cancel \
+ 	test-escape       \
+ 	test-uri       	  \
+-	$(srcdir)/auto-test	
++	auto-test	
+ 
+ libraries =						\
+ 	$(top_builddir)/libmatevfs/libmatevfs-2.la	\
