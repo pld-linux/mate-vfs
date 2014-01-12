@@ -209,7 +209,6 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/matevfs-mv
 %attr(755,root,root) %{_bindir}/matevfs-rm
 %attr(755,root,root) %{_libexecdir}/mate-vfs-daemon
-%dir %{_libdir}/mate-vfs-2.0/modules
 %attr(755,root,root) %{_libdir}/mate-vfs-2.0/modules/libbzip2.so
 %attr(755,root,root) %{_libdir}/mate-vfs-2.0/modules/libcomputer.so
 %attr(755,root,root) %{_libdir}/mate-vfs-2.0/modules/libdns-sd.so
@@ -230,6 +229,7 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_libdir}/libmatevfs-2.so.*.*.*
 %attr(755,root,root) %ghost %{_libdir}/libmatevfs-2.so.0
 %dir %{_libdir}/mate-vfs-2.0
+%dir %{_libdir}/mate-vfs-2.0/modules
 
 %files devel
 %defattr(644,root,root,755)
