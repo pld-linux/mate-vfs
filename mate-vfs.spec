@@ -30,7 +30,7 @@ BuildRequires:	dbus-glib-devel >= 0.60
 BuildRequires:	docbook-dtd412-xml >= 1.0-10
 BuildRequires:	fam-devel
 BuildRequires:	flex
-BuildRequires:	gettext-devel >= 0.10.40
+BuildRequires:	gettext-tools >= 0.10.40
 BuildRequires:	glib2-devel >= 1:2.10.0
 BuildRequires:	gtk-doc >= 1.0
 %{?with_hal:BuildRequires:	hal-devel >= 0.5.7}
